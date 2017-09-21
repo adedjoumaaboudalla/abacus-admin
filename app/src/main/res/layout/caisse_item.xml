@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:foreground="?selectableItemBackground"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img2"
+            android:src="@drawable/cash"
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/img2"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/libelle"
+                android:text="@string/partenaires"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/ville"
+                android:text="Lome TOGO"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/ca"
+                android:text="CA : 22123344"
+                android:textColor="@color/my_primary"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:text="Tel : 22123344"
+                android:visibility="gone"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

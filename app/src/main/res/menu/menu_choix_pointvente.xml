@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/affecterproduit"
+        android:orderInCategory="100"
+        android:title="@string/affecterproduit"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/contacter"
+        android:orderInCategory="100"
+        android:title="@string/contacter"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/modif"
+        android:orderInCategory="100"
+        android:title="@string/modif"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:title="@string/delete"
+        app:showAsAction="always" />
+
+</menu>

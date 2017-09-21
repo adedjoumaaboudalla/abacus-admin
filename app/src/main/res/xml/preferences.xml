@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/generale" >
+
+
+        <ListPreference
+            android:key="interval"
+            android:dialogTitle="@string/nbreload"
+            android:entries="@array/nbresujet_fr"
+            android:defaultValue="@string/vcinq"
+            android:negativeButtonText="@string/fermer"
+            android:entryValues="@array/nbresujetvalue"
+            android:summary="@string/nbreloadsum"
+            android:title="@string/nbreload" />
+
+        <!--
+
+
+        <EditTextPreference
+            android:key="ipserver"
+            android:icon="@mipmap/ic_msgfinal"
+            android:dialogTitle="@string/ipserver"
+            android:title="@string/ipserver"
+            android:summary="@string/ipserversumary"
+            />
+
+
+        <CheckBoxPreference
+            android:key="communication"
+            android:icon="@mipmap/ic_communication"
+            android:title="@string/communication"
+            android:summaryOn="@string/communicationon"
+            android:summaryOff="@string/communicationoff"
+            android:defaultValue="false"
+            />
+
+
+        <CheckBoxPreference
+            android:key="membre"
+            android:icon="@mipmap/ic_membre"
+            android:title="@string/membre"
+            android:summaryOff="@string/membreoff"
+            android:summaryOn="@string/membreon"
+            android:defaultValue="true"
+            />
+            !-->
+
+
+        <CheckBoxPreference
+            android:key="stockage"
+            android:icon="@mipmap/ic_sav"
+            android:title="@string/stockage"
+            android:summaryOn="@string/stockageon"
+            android:summaryOff="@string/stockageoff"
+            android:defaultValue="true"
+            />
+
+        <CheckBoxPreference
+            android:key="imprimenteexterne"
+            android:icon="@mipmap/ic_diffusuion"
+            android:title="@string/impconfig"
+            android:summaryOn="@string/impext"
+            android:summaryOff="@string/impint"
+            android:defaultValue="true"
+            />
+
+        <EditTextPreference
+            android:key="bluetoothConfig"
+            android:dependency="imprimenteexterne"
+            android:icon="@mipmap/ic_diffusuion"
+            android:dialogTitle="Nom de l'imprimente"
+            android:title="Imprimante"
+            android:summary="@string/imprsum"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/security" >
+
+        <CheckBoxPreference
+            android:key="verrouiller"
+            android:icon="@mipmap/ic_verrou"
+            android:title="@string/verrouiller"
+            android:summaryOff="@string/offverrouiller"
+            android:summaryOn="@string/onverrouiller"
+            android:defaultValue="false"
+            />
+
+
+        <EditTextPreference
+            android:key="password"
+            android:icon="@mipmap/ic_security"
+            android:dependency="verrouiller"
+            android:dialogTitle="@string/password"
+            android:title="@string/password"
+            android:summary="@string/passwordsummary"
+            />
+
+        <EditTextPreference
+            android:key="indicateur"
+            android:dependency="verrouiller"
+            android:icon="@mipmap/ic_info"
+            android:dialogTitle="@string/indicateur"
+            android:title="@string/indicateur"
+            android:summary="@string/indicsummary"
+            />
+
+
+        <EditTextPreference
+            android:key="mail"
+            android:dependency="verrouiller"
+            android:icon="@mipmap/ic_mail"
+            android:dialogTitle="@string/mail"
+            android:title="@string/mail"
+            android:summary="@string/mailsummary"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

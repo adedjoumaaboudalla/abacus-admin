@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drLayout"
+    tools:context="admin.pv.projects.mediasoft.com.abacus_admin.fragment.ProduitPredefiniFragment">
+
+
+    <CheckBox
+        android:id="@+id/all"
+        android:text="@string/chooseall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_below="@+id/all"
+        android:layout_above="@+id/last"
+        android:numColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </GridView>
+
+
+    <LinearLayout
+        android:id="@+id/last"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="60"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="45"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/suiv"
+            android:background="@color/my_primary"
+            android:text="@string/valider"
+            android:fontFamily="serif"
+            android:layout_gravity="left"
+            android:textColor="@color/my_secondary_text"
+            android:textSize="12dp"
+            android:elevation="1dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

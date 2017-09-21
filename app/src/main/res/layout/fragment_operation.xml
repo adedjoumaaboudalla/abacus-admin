@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary_text"
+    tools:context="admin.pv.projects.mediasoft.com.abacus_admin.fragment.OperationFragment">
+
+<!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/vide"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@color/my_error"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textColor="@color/gris_foncer"
+            android:gravity="center"
+            android:text="@string/anyresult" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_above="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/liste"
+            android:layout_marginTop="5dp"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/last"
+        android:orientation="vertical"
+        android:background="#ddd"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ttotal"
+                        android:textColor="@color/my_primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entree"/>
+
+                    <TextView
+                        android:id="@+id/depot"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/ttotal"
+                        android:textColor="@color/my_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4500000000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ttotal1"
+                        android:textColor="@color/my_primary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sortie"/>
+
+                    <TextView
+                        android:id="@+id/retrait"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/ttotal1"
+                        android:textColor="@color/my_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4500000000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ttotal3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nbr"/>
+
+                    <TextView
+                        android:id="@+id/nbre"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/ttotal3"
+                        android:textColor="@color/my_icons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4500000000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="nbresujet_fr">
+        <item>@string/cinq</item>
+        <item>@string/quninze</item>
+        <item>@string/trente</item>
+        <item>@string/heure</item>
+        <item>@string/troisheure</item>
+        <item>@string/sixheure</item>
+        <item>@string/douzeheure</item>
+        <item>@string/vinkatreheure</item>
+        <item>@string/jamais</item>
+    </array>
+
+    <array name="nbresujetvalue">
+        <item>@string/vcinq</item>
+        <item>@string/vquninze</item>
+        <item>@string/vtrente</item>
+        <item>@string/vheure</item>
+        <item>@string/vtroisheure</item>
+        <item>@string/vsixheure</item>
+        <item>@string/vdouzeheure</item>
+        <item>@string/vvinkatreheure</item>
+        <item>@string/vjamais</item>
+    </array>
+
+    <string name="cinq">5 min</string>
+    <string name="quninze">25 min</string>
+    <string name="trente">30 min</string>
+    <string name="heure">1 heure</string>
+    <string name="troisheure">3 heures</string>
+    <string name="sixheure">6 heures</string>
+    <string name="douzeheure">12 heures</string>
+    <string name="vinkatreheure">24 heures</string>
+    <string name="jamais">Jamais</string>
+
+    <string name="vcinq">5</string>
+    <string name="vquninze">25</string>
+    <string name="vtrente">30</string>
+    <string name="vheure">60</string>
+    <string name="vtroisheure">180</string>
+    <string name="vsixheure">360</string>
+    <string name="vdouzeheure">720</string>
+    <string name="vvinkatreheure">1440</string>
+    <string name="vjamais">999999999999999999999999</string>
+</resources>

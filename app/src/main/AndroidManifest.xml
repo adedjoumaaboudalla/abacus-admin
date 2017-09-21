@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="admin.pv.projects.mediasoft.com.abacus_admin">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INJECT_EVENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.AccueilActivity"
+            android:label="@string/title_activity_accueil" />
+        <activity
+            android:name=".activities.ReglageActivity"
+            android:label="@string/title_activity_reglage"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.pv.projects.mediasoft.com.abacus_admin.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.ProduitFormActivity"
+            android:label="@string/title_activity_produit_form"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.pv.projects.mediasoft.com.abacus_admin.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PartenaireFormActivity"
+            android:label="@string/title_activity_partenaire_form" />
+        <activity
+            android:name=".activities.CommercialFormActivity"
+            android:label="@string/title_activity_commercial_form" />
+        <activity
+            android:name=".activities.PointVenteActivity"
+            android:label="@string/title_activity_point_vente"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.pv.projects.mediasoft.com.abacus_admin.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PointventeFormActivity"
+            android:label="@string/title_activity_pointvente_form" />
+        <activity
+            android:name=".activities.CaisseFormActivity"
+            android:label="@string/title_activity_caisse" />
+        <activity
+            android:name=".activities.ProduitPointventeActivity"
+            android:label="@string/title_activity_produit_pointvente" />
+
+        <provider
+            android:name=".services.OperationProvider"
+            android:authorities="admin.pv.projects.mediasoft.com.abacus_admin.Operation"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".services.AuthenticatorService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name=".services.OperationSyncService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/operationsyncadapter" />
+        </service>
+
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.pv.projects.mediasoft.com.abacus_admin.activities.AccueilActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CategorieProduitActivity"
+            android:label="@string/title_activity_categorie_produit" />
+        <activity
+            android:name=".activities.ProduitPredefiniActivity"
+            android:label="@string/title_activity_produit_predefini"
+            android:parentActivityName=".activities.AccueilActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.pv.projects.mediasoft.com.abacus_admin.activities.AccueilActivity" />
+        </activity>
+        <activity android:name=".activities.ScannerActivity"></activity>
+    </application>
+
+</manifest>

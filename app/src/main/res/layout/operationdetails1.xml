@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/description"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:layout_height="match_parent"
+                android:text="@string/montantn"/>
+
+            <TextView
+                android:id="@+id/montant"
+                android:textColor="@color/my_primary"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/mode"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:layout_height="match_parent"
+                android:text=""/>
+
+
+            <TextView
+                android:id="@+id/banque"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:text=""/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/dateVente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Date de vente : 12/12/12"/>
+
+        <TextView
+            android:id="@+id/client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=""/>
+
+
+        <ImageButton
+            android:id="@+id/imp"
+            android:src="@mipmap/ic_impri"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/fermer"
+            android:text="@string/fermer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+</ScrollView>

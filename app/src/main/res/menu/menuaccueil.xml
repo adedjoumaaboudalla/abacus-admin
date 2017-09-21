@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="projects.mediasoft.com.pointvente.activities.VenteFormActivity">
+
+    <!--
+    <item
+        android:id="@+id/menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        android:title="@string/menu_search"/>
+    !-->
+
+    <item
+        android:id="@+id/action_interval"
+        android:orderInCategory="100"
+        android:title="@string/date"
+        android:icon="@drawable/ic_action_date"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/nouveau"
+        android:title="@string/btn_nvo"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_plus"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/menu_filtre"
+        android:title="@string/btn_nvo"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:icon="@mipmap/menu_filtre"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/menu_save"
+        android:title="@string/imprimer"
+        android:visible="false"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_sav"
+        app:showAsAction="always" />
+
+</menu>

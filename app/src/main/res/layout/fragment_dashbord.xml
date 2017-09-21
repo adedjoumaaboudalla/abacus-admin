@@ -1,0 +1,496 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="admin.pv.projects.mediasoft.com.abacus_admin.fragment.DashbordFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/dateinterval"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text=""
+            android:textColor="@color/my_icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/nbreop"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text=""
+            android:textColor="@color/my_icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:text="Chiffre d'affaire"
+                android:textStyle="bold"
+                android:textColor="@color/state0"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/case1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/separe1"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:text="@string/totalx"
+                        android:textColor="@color/state2"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/catotal"
+                        android:textSize="16sp"
+                        android:text="0 F"
+                        android:padding="5dp"
+                        android:textColor="@color/my_icons"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/separe1"
+                    android:layout_width="1dp"
+                    android:layout_alignBottom="@+id/case1"
+                    android:layout_centerInParent="true"
+                    android:background="@color/my_primary_text"
+                    android:layout_height="100dp"/>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/separe1"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:text="@string/par_jour"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/caparjour"
+                        android:textSize="16sp"
+                        android:text="0 F"
+                        android:padding="5dp"
+                        android:textColor="@color/my_icons"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/my_primary_text"
+                android:layout_height="1dp"/>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/case5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/separe5"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:text="@string/opannuler"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/opannuler"
+                        android:textSize="16sp"
+                        android:text="0 F"
+                        android:padding="5dp"
+                        android:textColor="@color/my_icons"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/separe5"
+                    android:layout_width="1dp"
+                    android:layout_alignBottom="@+id/case5"
+                    android:layout_centerInParent="true"
+                    android:background="@color/my_primary_text"
+                    android:layout_height="100dp"/>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/separe5"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:text="@string/acredit"
+                        android:textColor="@color/state0"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/opcredit"
+                        android:textSize="16sp"
+                        android:text="0 F"
+                        android:padding="5dp"
+                        android:textColor="@color/my_icons"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/my_primary_text"
+            android:layout_height="1dp"/>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:text="Achat et dépenses"
+                android:textStyle="bold"
+                android:textColor="@color/state0"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/case2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/separe2"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:text="@string/totalx"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/deptotal"
+                        android:textSize="16sp"
+                        android:text="0 F"
+                        android:padding="5dp"
+                        android:textColor="@color/my_icons"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/separe2"
+                    android:layout_width="1dp"
+                    android:layout_alignBottom="@+id/case2"
+                    android:layout_centerInParent="true"
+                    android:background="@color/my_primary_text"
+                    android:layout_height="100dp"/>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/separe2"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:text="@string/par_jour"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/depparjour"
+                        android:textSize="16sp"
+                        android:text="0 F"
+                        android:padding="5dp"
+                        android:textColor="@color/my_icons"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/my_primary_text"
+            android:layout_height="1dp"/>
+
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:text="Autres"
+            android:textColor="@color/state0"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/case3"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/separe3"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Produits Financiers"
+                    android:textColor="@color/state2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/pf"
+                    android:textSize="16sp"
+                    android:text="0 F"
+                    android:padding="5dp"
+                    android:textColor="@color/my_icons"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/separe3"
+                android:layout_width="1dp"
+                android:layout_alignBottom="@+id/case3"
+                android:layout_centerInParent="true"
+                android:background="@color/my_primary_text"
+                android:layout_height="100dp"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/separe3"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Charges financieres"
+                    android:textColor="@color/state0"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cf"
+                    android:textSize="16sp"
+                    android:text="0 F"
+                    android:padding="5dp"
+                    android:textColor="@color/my_icons"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/my_primary_text"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/case4"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/separe4"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Produits exceptionnels"
+                    android:textColor="@color/state2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/pe"
+                    android:textSize="16sp"
+                    android:text="0 F"
+                    android:padding="5dp"
+                    android:textColor="@color/my_icons"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/separe4"
+                android:layout_width="1dp"
+                android:layout_alignBottom="@+id/case4"
+                android:layout_centerInParent="true"
+                android:background="@color/my_primary_text"
+                android:layout_height="100dp"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/separe4"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="Charges exceptionnelles"
+                    android:textColor="@color/state0"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/ce"
+                    android:textSize="16sp"
+                    android:text="0 F"
+                    android:padding="5dp"
+                    android:textColor="@color/my_icons"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/my_primary_text"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
