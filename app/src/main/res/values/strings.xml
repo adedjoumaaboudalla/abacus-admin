@@ -485,5 +485,10 @@
     <string name="code_existant">Code déja existant</string>
     <string name="produit_existant">Produit déja existant</string>
     <string name="echeclecture">Echec de lecture</string>
+    <string name="creermodpv">Créer modifier et supprimer vos points de vente</string>
+    <string name="creermodcaiss">Créer modifier et supprimer vos caisses</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="loading">Chargement</string>
+    <string name="add_point_de_ventes">Ajout de point de vente</string>
 
 </resources>

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import admin.pv.projects.mediasoft.com.abacus_admin.R;
 import admin.pv.projects.mediasoft.com.abacus_admin.activities.DashboardActivity;
+import admin.pv.projects.mediasoft.com.abacus_admin.activities.WebViewActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -57,6 +58,9 @@ public class AccueilFragment extends Fragment implements View.OnClickListener {
 
     public static final String ETAT_URI = "etaturi" ;
     CardView etatCard = null ;
+
+    CardView pointventeCard = null ;
+    CardView caisseCard = null ;
 
     public static final String EXIT_URI = "exituri" ;
     CardView exitCard = null ;
@@ -131,6 +135,12 @@ public class AccueilFragment extends Fragment implements View.OnClickListener {
         etatCard = (CardView) v.findViewById(R.id.etatCard);
         etatCard.setOnClickListener(this);
 
+        pointventeCard = (CardView) v.findViewById(R.id.pointventeCard);
+        pointventeCard.setOnClickListener(this);
+
+        caisseCard = (CardView) v.findViewById(R.id.caisseCard);
+        caisseCard.setOnClickListener(this);
+
         predefiniProduitCard = (CardView) v.findViewById(R.id.predefiniProduitCard);
         predefiniProduitCard.setOnClickListener(this);
 
@@ -176,6 +186,16 @@ public class AccueilFragment extends Fragment implements View.OnClickListener {
             case R.id.exitCard : mListener.onFragmentInteraction(Uri.parse(EXIT_URI)); break;
             case R.id.dashCard : {
                 Intent intent = new Intent(getActivity(), DashboardActivity.class) ;
+                startActivity(intent);
+            } break;
+            case R.id.pointventeCard : {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class) ;
+                intent.putExtra("url","pointventes") ;
+                startActivity(intent);
+            } break;
+            case R.id.caisseCard : {
+                Intent intent = new Intent(getActivity(), WebViewActivity.class) ;
+                intent.putExtra("url","caisse") ;
                 startActivity(intent);
             } break;
         }

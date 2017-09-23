@@ -180,4 +180,8 @@ public class Url {
         return result ;
     }
 
+    public static String getWebUrl(String url) {
+        String result = "http://50.63.13.84/~abacusweb/abacus/mobile/"+url;
+        return result ;
+    }
 }
